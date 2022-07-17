@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&family=Poppins:wght@400;600&display=swap');
+
+*{
+    font-family: 'Poppins','sans-serif';
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    color: inherit;
+}
+
+
+body{
+    width: 100%;
+    font-family: "Poppins";
+    background-color: #22254b;
+    margin: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+header {
+    color: #f2f2f2;
+    background-color: #1a1c38;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search {
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#search::placeholder {
+    color: #7378c5;
+}
+
+
+.banner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: start;
+    transform-origin: center center;
+    position: relative;
+  overflow-x: hidden;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+  }
+
+  .next {
+    right: 2vw;
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 3rem;
+    padding: 0 0 0 1vw;
+    position: absolute;
+    bottom: 4vw;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: .9s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+
+
+.banner li img{
+    width: 100vw;
+    height: 70vh;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    box-shadow: 0.2px 0.2px;
+    background-color: #948CA4;
+    margin: 1.5rem;
+    width: 18vw;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info{
+    color: #F8F8F9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: .5px;
+    padding: 0.5rem 1rem 1rem;
+}
+
+.movie-info span{
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
